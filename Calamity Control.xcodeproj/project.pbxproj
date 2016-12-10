@@ -22,6 +22,8 @@
 		7DC2C5781DFCAC92007F5AFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DC2C5771DFCAC92007F5AFF /* GoogleService-Info.plist */; };
 		7DC2C57A1DFCB0B9007F5AFF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */; };
 		7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */; };
+		7DC2C57E1DFCC7DA007F5AFF /* VolunteerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */; };
+		7DC2C5801DFCCA62007F5AFF /* VolunteerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */; };
 		CF45BE7CEF294A3EDBD61224 /* Pods_Calamity_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C574EA8FF690C4CF1069B7 /* Pods_Calamity_Control.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		7DC2C5771DFCAC92007F5AFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaterData.swift; sourceTree = "<group>"; };
+		7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerCell.swift; sourceTree = "<group>"; };
+		7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerData.swift; sourceTree = "<group>"; };
 		8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.release.xcconfig"; sourceTree = "<group>"; };
 		98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +134,7 @@
 			children = (
 				7DAC8C121DFC7CF6005D170D /* CircularButton.swift */,
 				7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */,
+				7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */,
+				7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			files = (
 				7DAC8C001DFC7728005D170D /* MainVC.swift in Sources */,
 				7D6D514C1DFC90CE00B9FFBE /* DonatersVC.swift in Sources */,
+				7DC2C5801DFCCA62007F5AFF /* VolunteerData.swift in Sources */,
 				7DC2C57A1DFCB0B9007F5AFF /* CustomCell.swift in Sources */,
 				7DAC8BFE1DFC7728005D170D /* AppDelegate.swift in Sources */,
 				7DAC8C131DFC7CF6005D170D /* CircularButton.swift in Sources */,
@@ -284,6 +291,7 @@
 				7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */,
 				7D6D51501DFCA27000B9FFBE /* MapVC.swift in Sources */,
 				7D6D514A1DFC8F5300B9FFBE /* DetailsVC.swift in Sources */,
+				7DC2C57E1DFCC7DA007F5AFF /* VolunteerCell.swift in Sources */,
 				7D6D514E1DFC90EF00B9FFBE /* EmergencyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

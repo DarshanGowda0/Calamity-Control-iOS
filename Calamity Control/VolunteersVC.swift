@@ -7,29 +7,56 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
-class VolunteersVC: UIViewController {
+class VolunteersVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    var ref : FIRDatabaseReference!
+    var volunteers = [VolunteerData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        ref = FIRDatabase.database().reference()
+        fetchData()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
+    func fetchData(){
+        ref.child("volunteers").observeSingleEvent(of: .value, with: {(snapshot) in
+            
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot]{
+                for snap in snapshot{
+                    if let dict = snap.value as? Dictionary<String,AnyObject>{
+                        let data = VolunteerData(dict: dict)
+                        self.volunteers.append(data)
+                    }
+                }
+            }
+            self.tableView.reloadData()
+        }){(error) in
+            print(error.localizedDescription)
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return volunteers.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "volunteerCell", for: indexPath) as? VolunteerCell{
+            cell.configureCell(data : volunteers[indexPath.row])
+            return cell
+        }
+        return UITableViewCell()
+    }
 
 }
