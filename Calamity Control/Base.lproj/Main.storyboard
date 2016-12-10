@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMa-9T-B2R">
-                                <rect key="frame" x="162" y="318" width="51" height="30"/>
-                                <state key="normal" title="Call me"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMa-9T-B2R" customClass="CircularButton" customModule="Calamity_Control" customModuleProvider="target">
+                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CV5-cs-7Lg"/>
+                                    <constraint firstAttribute="width" constant="60" id="IyO-2g-BIl"/>
+                                </constraints>
                                 <connections>
                                     <action selector="callMeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTZ-fj-wtN"/>
                                 </connections>
@@ -31,8 +36,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uMa-9T-B2R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GmE-VX-bY6"/>
-                            <constraint firstItem="uMa-9T-B2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXk-VO-zB6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uMa-9T-B2R" secondAttribute="bottom" constant="20" id="OAV-v8-5QM"/>
+                            <constraint firstItem="uMa-9T-B2R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S6i-Yu-fnC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wuU-VK-C2g"/>
@@ -44,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="1122" y="124"/>
         </scene>
-        <!--Item 2-->
+        <!--EmergencyVC-->
         <scene sceneID="wt9-Yb-gZe">
             <objects>
                 <viewController id="J7t-yJ-3H3" customClass="EmergencyVC" customModule="Calamity_Control" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,13 +74,13 @@
                             <constraint firstItem="KHU-2r-bX5" firstAttribute="centerY" secondItem="p6H-Kw-1DB" secondAttribute="centerY" id="gWS-ju-Wpq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="x7r-MJ-4bi"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="x7r-MJ-4bi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfG-1M-riT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2950" y="451"/>
         </scene>
-        <!--Item-->
+        <!--MapVC-->
         <scene sceneID="zia-ET-JFd">
             <objects>
                 <viewController id="3Mu-qa-6vc" customClass="MapVC" customModule="Calamity_Control" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,13 +105,13 @@
                             <constraint firstItem="yr8-th-9gN" firstAttribute="centerX" secondItem="Uh5-wj-05D" secondAttribute="centerX" id="bVI-Zg-uzU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2hz-lB-nNf"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="2hz-lB-nNf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSb-k4-kMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2946" y="1161"/>
         </scene>
-        <!--Item-->
+        <!--VolunteersVC-->
         <scene sceneID="Cdf-jX-xrM">
             <objects>
                 <viewController id="CRo-um-0oS" customClass="VolunteersVC" customModule="Calamity_Control" customModuleProvider="target" sceneMemberID="viewController">
@@ -119,13 +124,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bHK-bQ-fyj"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="bHK-bQ-fyj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2Z-6g-G5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2947" y="-877"/>
         </scene>
-        <!--Item 1-->
+        <!--DonatersVC-->
         <scene sceneID="wEX-dy-1ng">
             <objects>
                 <viewController id="2TN-dq-PYO" customClass="DonatersVC" customModule="Calamity_Control" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,24 +142,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Scene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDS-Wg-kvx">
-                                <rect key="frame" x="144" y="323" width="86" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A74-uf-uHy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="donaterCell" rowHeight="149" id="8mH-DG-30Q" customClass="CustomCell" customModule="Calamity_Control" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8mH-DG-30Q" id="lEe-0C-ffn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="e0l-df-tqc">
+                                                    <rect key="frame" x="12" y="24.5" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Avp-GW-JVo"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Yvd-eF-dja"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amruth Pillai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-PF-Cpv">
+                                                    <rect key="frame" x="120" y="22" width="239" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="aB6-AN-Lrr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bread" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY5-2a-SXe">
+                                                    <rect key="frame" x="120" y="51" width="239" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="JZh-Wd-apC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9742934099" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-ko-OQ8">
+                                                    <rect key="frame" x="120" y="80" width="239" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="j08-Me-3cd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangalore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRP-ez-GPT">
+                                                    <rect key="frame" x="120" y="109" width="239" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="JCV-SF-l5v"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FaE-ko-OQ8" firstAttribute="leading" secondItem="e0l-df-tqc" secondAttribute="trailing" constant="8" id="2WI-s2-STp"/>
+                                                <constraint firstItem="e0l-df-tqc" firstAttribute="centerY" secondItem="lEe-0C-ffn" secondAttribute="centerY" id="6Gu-rY-ZgR"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Oea-PF-Cpv" secondAttribute="trailing" constant="8" id="6nE-Ij-RyN"/>
+                                                <constraint firstItem="Oea-PF-Cpv" firstAttribute="top" secondItem="lEe-0C-ffn" secondAttribute="topMargin" constant="14" id="BEd-6H-EvP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gRP-ez-GPT" secondAttribute="trailing" constant="8" id="EYK-92-3by"/>
+                                                <constraint firstItem="gRP-ez-GPT" firstAttribute="top" secondItem="FaE-ko-OQ8" secondAttribute="bottom" constant="8" id="Pj5-cW-EV6"/>
+                                                <constraint firstItem="e0l-df-tqc" firstAttribute="leading" secondItem="lEe-0C-ffn" secondAttribute="leadingMargin" constant="4" id="UW2-HK-KAK"/>
+                                                <constraint firstItem="Oea-PF-Cpv" firstAttribute="leading" secondItem="e0l-df-tqc" secondAttribute="trailing" constant="8" id="UzD-tC-JnW"/>
+                                                <constraint firstItem="MY5-2a-SXe" firstAttribute="leading" secondItem="e0l-df-tqc" secondAttribute="trailing" constant="8" id="XYu-DC-yOq"/>
+                                                <constraint firstItem="MY5-2a-SXe" firstAttribute="top" secondItem="Oea-PF-Cpv" secondAttribute="bottom" constant="8" id="eac-wS-pVe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FaE-ko-OQ8" secondAttribute="trailing" constant="8" id="gBt-7Q-nfi"/>
+                                                <constraint firstItem="gRP-ez-GPT" firstAttribute="leading" secondItem="e0l-df-tqc" secondAttribute="trailing" constant="8" id="h51-C2-bje"/>
+                                                <constraint firstItem="FaE-ko-OQ8" firstAttribute="top" secondItem="MY5-2a-SXe" secondAttribute="bottom" constant="8" id="hHp-sm-vMd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MY5-2a-SXe" secondAttribute="trailing" constant="8" id="pZt-3f-TUG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Oea-PF-Cpv" id="O6w-sY-u4q"/>
+                                            <outlet property="numberLabel" destination="FaE-ko-OQ8" id="T9N-7n-q20"/>
+                                            <outlet property="placeLabel" destination="gRP-ez-GPT" id="Zjn-8H-keE"/>
+                                            <outlet property="thumb" destination="e0l-df-tqc" id="9m8-vB-cq8"/>
+                                            <outlet property="typeLabel" destination="MY5-2a-SXe" id="stO-15-Vds"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDS-Wg-kvx" firstAttribute="centerX" secondItem="5un-fY-0Zt" secondAttribute="centerX" id="CQ7-oe-7J3"/>
-                            <constraint firstItem="NDS-Wg-kvx" firstAttribute="centerY" secondItem="5un-fY-0Zt" secondAttribute="centerY" id="he7-1Z-6hM"/>
+                            <constraint firstItem="KEa-QD-mJW" firstAttribute="top" secondItem="A74-uf-uHy" secondAttribute="bottom" id="Hr8-7N-jHe"/>
+                            <constraint firstAttribute="trailing" secondItem="A74-uf-uHy" secondAttribute="trailing" id="UPw-eF-Fk3"/>
+                            <constraint firstItem="A74-uf-uHy" firstAttribute="top" secondItem="8Ow-we-PQW" secondAttribute="bottom" id="bb2-Mn-06g"/>
+                            <constraint firstItem="A74-uf-uHy" firstAttribute="leading" secondItem="5un-fY-0Zt" secondAttribute="leading" id="kpG-R8-o7v"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="6bb-yY-1ZE"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="6bb-yY-1ZE"/>
+                    <connections>
+                        <outlet property="tableView" destination="A74-uf-uHy" id="h1O-0Y-fFk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTZ-8J-hM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2950" y="-205"/>
+            <point key="canvasLocation" x="2949.5999999999999" y="-205.54722638680661"/>
         </scene>
         <!--DetailsVC-->
         <scene sceneID="5bg-6r-aEX">
@@ -195,4 +281,7 @@
             <point key="canvasLocation" x="103" y="124"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user" width="50" height="50"/>
+    </resources>
 </document>

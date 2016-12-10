@@ -18,19 +18,27 @@ class MainVC: UIViewController {
     }
 
     @IBAction func callMeTapped(_ sender: Any) {
-        
         performSegue(withIdentifier: "viewDetails", sender: nil)
-        
     }
     
-    private func callNumber(phoneNumber:String) {
-        if let phoneCallURL:NSURL = NSURL(string: "tel://\(phoneNumber)") {
-            let application:UIApplication = UIApplication.shared
-            if (application.canOpenURL(phoneCallURL as URL)) {
-                application.openURL(phoneCallURL as URL);
-            }
-        }
-    }
 
 }
 
+
+
+
+
+
+
+
+
+
+
+//    private func callNumber(phoneNumber:String) {
+//        if let phoneCallURL:NSURL = NSURL(string: "tel://\(phoneNumber)") {
+//            let application:UIApplication = UIApplication.shared
+//            if (application.canOpenURL(phoneCallURL as URL)) {
+//                application.openURL(phoneCallURL as URL);
+//            }
+//        }
+//    }

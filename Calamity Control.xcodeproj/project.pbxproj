@@ -19,9 +19,14 @@
 		7DAC8C081DFC7728005D170D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DAC8C061DFC7728005D170D /* LaunchScreen.storyboard */; };
 		7DAC8C131DFC7CF6005D170D /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8C121DFC7CF6005D170D /* CircularButton.swift */; };
 		7DAC8C161DFC7D66005D170D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC8C151DFC7D66005D170D /* Constants.swift */; };
+		7DC2C5781DFCAC92007F5AFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DC2C5771DFCAC92007F5AFF /* GoogleService-Info.plist */; };
+		7DC2C57A1DFCB0B9007F5AFF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */; };
+		7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */; };
+		CF45BE7CEF294A3EDBD61224 /* Pods_Calamity_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C574EA8FF690C4CF1069B7 /* Pods_Calamity_Control.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14C574EA8FF690C4CF1069B7 /* Pods_Calamity_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calamity_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6D51491DFC8F5300B9FFBE /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		7D6D514B1DFC90CE00B9FFBE /* DonatersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonatersVC.swift; sourceTree = "<group>"; };
 		7D6D514D1DFC90EF00B9FFBE /* EmergencyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyVC.swift; sourceTree = "<group>"; };
@@ -36,6 +41,11 @@
 		7DAC8C091DFC7728005D170D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAC8C121DFC7CF6005D170D /* CircularButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		7DAC8C151DFC7D66005D170D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7DC2C5771DFCAC92007F5AFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaterData.swift; sourceTree = "<group>"; };
+		8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.release.xcconfig"; sourceTree = "<group>"; };
+		98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF45BE7CEF294A3EDBD61224 /* Pods_Calamity_Control.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56C1B03261A3C757ACAED539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C574EA8FF690C4CF1069B7 /* Pods_Calamity_Control.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		662FE94CBC803E802162D217 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */,
+				8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DAC8BF11DFC7728005D170D = {
 			isa = PBXGroup;
 			children = (
 				7DAC8BFC1DFC7728005D170D /* Calamity Control */,
 				7DAC8BFB1DFC7728005D170D /* Products */,
+				662FE94CBC803E802162D217 /* Pods */,
+				56C1B03261A3C757ACAED539 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +98,7 @@
 		7DAC8BFC1DFC7728005D170D /* Calamity Control */ = {
 			isa = PBXGroup;
 			children = (
+				7DC2C5771DFCAC92007F5AFF /* GoogleService-Info.plist */,
 				7DAC8C141DFC7D53005D170D /* Util */,
 				7DAC8C111DFC7769005D170D /* Model */,
 				7DAC8C101DFC7763005D170D /* View */,
@@ -98,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				7DAC8C121DFC7CF6005D170D /* CircularButton.swift */,
+				7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -105,6 +137,7 @@
 		7DAC8C111DFC7769005D170D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -124,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DAC8C0C1DFC7728005D170D /* Build configuration list for PBXNativeTarget "Calamity Control" */;
 			buildPhases = (
+				C072DD8E9EF4D2E903CBD8C3 /* [CP] Check Pods Manifest.lock */,
 				7DAC8BF61DFC7728005D170D /* Sources */,
 				7DAC8BF71DFC7728005D170D /* Frameworks */,
 				7DAC8BF81DFC7728005D170D /* Resources */,
+				E625FFA4ED9F4BE275AF1E4C /* [CP] Embed Pods Frameworks */,
+				BBA1383358ED5FA592D1E6E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,12 +213,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAC8C081DFC7728005D170D /* LaunchScreen.storyboard in Resources */,
+				7DC2C5781DFCAC92007F5AFF /* GoogleService-Info.plist in Resources */,
 				7DAC8C051DFC7728005D170D /* Assets.xcassets in Resources */,
 				7DAC8C031DFC7728005D170D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBA1383358ED5FA592D1E6E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C072DD8E9EF4D2E903CBD8C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E625FFA4ED9F4BE275AF1E4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DAC8BF61DFC7728005D170D /* Sources */ = {
@@ -191,10 +276,12 @@
 			files = (
 				7DAC8C001DFC7728005D170D /* MainVC.swift in Sources */,
 				7D6D514C1DFC90CE00B9FFBE /* DonatersVC.swift in Sources */,
+				7DC2C57A1DFCB0B9007F5AFF /* CustomCell.swift in Sources */,
 				7DAC8BFE1DFC7728005D170D /* AppDelegate.swift in Sources */,
 				7DAC8C131DFC7CF6005D170D /* CircularButton.swift in Sources */,
 				7D6D51521DFCA28400B9FFBE /* VolunteersVC.swift in Sources */,
 				7DAC8C161DFC7D66005D170D /* Constants.swift in Sources */,
+				7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */,
 				7D6D51501DFCA27000B9FFBE /* MapVC.swift in Sources */,
 				7D6D514A1DFC8F5300B9FFBE /* DetailsVC.swift in Sources */,
 				7D6D514E1DFC90EF00B9FFBE /* EmergencyVC.swift in Sources */,
@@ -318,6 +405,7 @@
 		};
 		7DAC8C0D1DFC7728005D170D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Calamity Control/Info.plist";
@@ -330,6 +418,7 @@
 		};
 		7DAC8C0E1DFC7728005D170D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Calamity Control/Info.plist";
