@@ -44,10 +44,18 @@ class DonaterData{
         return _location
     }
     
-    init(name: String,type:String,number:String,location:String) {
-        self._name = name;
-        self._number = number
-        self._location = location
-        self._type = type
+    init(dict : Dictionary<String,AnyObject>) {
+        if let name = dict["name"] as? String{
+            self._name = name
+        }
+        if let type = dict["item"] as? String{
+            self._type = type
+        }
+        if let number = dict["number"] as? String{
+            self._number = number
+        }
+        if let place = dict["place"] as? String{
+            self._location = place
+        }
     }
 }
