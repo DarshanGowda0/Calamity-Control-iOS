@@ -8,6 +8,7 @@ target 'Calamity Control' do
   pod 'Firebase/Database'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Alamofire'
   # Pods for Calamity Control
 
 end

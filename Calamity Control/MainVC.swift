@@ -21,24 +21,13 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "viewDetails", sender: nil)
     }
     
+    @IBAction func alertTapped(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Recorded", message: "Your Report is submitted", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
 
 }
 
-
-
-
-
-
-
-
-
-
-
-//    private func callNumber(phoneNumber:String) {
-//        if let phoneCallURL:NSURL = NSURL(string: "tel://\(phoneNumber)") {
-//            let application:UIApplication = UIApplication.shared
-//            if (application.canOpenURL(phoneCallURL as URL)) {
-//                application.openURL(phoneCallURL as URL);
-//            }
-//        }
-//    }

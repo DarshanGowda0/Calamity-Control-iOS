@@ -34,10 +34,6 @@ class EmergencyVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         temp = EmergencyData(name: "Darshan N", number: "9742934099")
         data.append(temp)
         
-        temp = EmergencyData(name: "Meghanan Nekkanti", number: "9765263123")
-        data.append(temp)
-        temp = EmergencyData(name: "Rohan Kumar", number: "8792414258")
-        data.append(temp)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
