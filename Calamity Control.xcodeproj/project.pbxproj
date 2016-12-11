@@ -25,6 +25,10 @@
 		7DC2C57E1DFCC7DA007F5AFF /* VolunteerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */; };
 		7DC2C5801DFCCA62007F5AFF /* VolunteerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */; };
 		7DC2C5821DFD1442007F5AFF /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5811DFD1442007F5AFF /* Report.swift */; };
+		7DC2C5841DFD2AD5007F5AFF /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5831DFD2AD5007F5AFF /* Material.swift */; };
+		7DC2C5861DFD34A2007F5AFF /* EmergencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5851DFD34A2007F5AFF /* EmergencyCell.swift */; };
+		7DC2C5881DFD3532007F5AFF /* EmergencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5871DFD3532007F5AFF /* EmergencyData.swift */; };
+		7DC2C58A1DFD3B3D007F5AFF /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DC2C5891DFD3B3D007F5AFF /* splash.png */; };
 		CF45BE7CEF294A3EDBD61224 /* Pods_Calamity_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C574EA8FF690C4CF1069B7 /* Pods_Calamity_Control.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerCell.swift; sourceTree = "<group>"; };
 		7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerData.swift; sourceTree = "<group>"; };
 		7DC2C5811DFD1442007F5AFF /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		7DC2C5831DFD2AD5007F5AFF /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		7DC2C5851DFD34A2007F5AFF /* EmergencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyCell.swift; sourceTree = "<group>"; };
+		7DC2C5871DFD3532007F5AFF /* EmergencyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyData.swift; sourceTree = "<group>"; };
+		7DC2C5891DFD3B3D007F5AFF /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.release.xcconfig"; sourceTree = "<group>"; };
 		98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +112,7 @@
 		7DAC8BFC1DFC7728005D170D /* Calamity Control */ = {
 			isa = PBXGroup;
 			children = (
+				7DC2C5891DFD3B3D007F5AFF /* splash.png */,
 				7DC2C5771DFCAC92007F5AFF /* GoogleService-Info.plist */,
 				7DAC8C141DFC7D53005D170D /* Util */,
 				7DAC8C111DFC7769005D170D /* Model */,
@@ -134,9 +143,11 @@
 		7DAC8C101DFC7763005D170D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DC2C5851DFD34A2007F5AFF /* EmergencyCell.swift */,
 				7DAC8C121DFC7CF6005D170D /* CircularButton.swift */,
 				7DC2C5791DFCB0B9007F5AFF /* CustomCell.swift */,
 				7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */,
+				7DC2C5831DFD2AD5007F5AFF /* Material.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 				7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */,
 				7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */,
 				7DC2C5811DFD1442007F5AFF /* Report.swift */,
+				7DC2C5871DFD3532007F5AFF /* EmergencyData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -225,6 +237,7 @@
 				7DC2C5781DFCAC92007F5AFF /* GoogleService-Info.plist in Resources */,
 				7DAC8C051DFC7728005D170D /* Assets.xcassets in Resources */,
 				7DAC8C031DFC7728005D170D /* Main.storyboard in Resources */,
+				7DC2C58A1DFD3B3D007F5AFF /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +298,7 @@
 			files = (
 				7DAC8C001DFC7728005D170D /* MainVC.swift in Sources */,
 				7D6D514C1DFC90CE00B9FFBE /* DonatersVC.swift in Sources */,
+				7DC2C5881DFD3532007F5AFF /* EmergencyData.swift in Sources */,
 				7DC2C5801DFCCA62007F5AFF /* VolunteerData.swift in Sources */,
 				7DC2C57A1DFCB0B9007F5AFF /* CustomCell.swift in Sources */,
 				7DAC8BFE1DFC7728005D170D /* AppDelegate.swift in Sources */,
@@ -293,8 +307,10 @@
 				7DAC8C161DFC7D66005D170D /* Constants.swift in Sources */,
 				7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */,
 				7DC2C5821DFD1442007F5AFF /* Report.swift in Sources */,
+				7DC2C5841DFD2AD5007F5AFF /* Material.swift in Sources */,
 				7D6D51501DFCA27000B9FFBE /* MapVC.swift in Sources */,
 				7D6D514A1DFC8F5300B9FFBE /* DetailsVC.swift in Sources */,
+				7DC2C5861DFD34A2007F5AFF /* EmergencyCell.swift in Sources */,
 				7DC2C57E1DFCC7DA007F5AFF /* VolunteerCell.swift in Sources */,
 				7D6D514E1DFC90EF00B9FFBE /* EmergencyVC.swift in Sources */,
 			);
@@ -420,6 +436,7 @@
 			baseConfigurationReference = 98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = "Calamity Control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darshan.Calamity-Control";
@@ -433,6 +450,7 @@
 			baseConfigurationReference = 8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = "Calamity Control/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darshan.Calamity-Control";
