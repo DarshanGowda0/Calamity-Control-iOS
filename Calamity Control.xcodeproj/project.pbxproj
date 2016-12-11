@@ -24,6 +24,7 @@
 		7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */; };
 		7DC2C57E1DFCC7DA007F5AFF /* VolunteerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */; };
 		7DC2C5801DFCCA62007F5AFF /* VolunteerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */; };
+		7DC2C5821DFD1442007F5AFF /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2C5811DFD1442007F5AFF /* Report.swift */; };
 		CF45BE7CEF294A3EDBD61224 /* Pods_Calamity_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C574EA8FF690C4CF1069B7 /* Pods_Calamity_Control.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaterData.swift; sourceTree = "<group>"; };
 		7DC2C57D1DFCC7DA007F5AFF /* VolunteerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerCell.swift; sourceTree = "<group>"; };
 		7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerData.swift; sourceTree = "<group>"; };
+		7DC2C5811DFD1442007F5AFF /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		8BFB6BFF627F4B3C59364C66 /* Pods-Calamity Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.release.xcconfig"; sourceTree = "<group>"; };
 		98CA873BAF153B669245136B /* Pods-Calamity Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calamity Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calamity Control/Pods-Calamity Control.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 			children = (
 				7DC2C57B1DFCB0E9007F5AFF /* DonaterData.swift */,
 				7DC2C57F1DFCCA62007F5AFF /* VolunteerData.swift */,
+				7DC2C5811DFD1442007F5AFF /* Report.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				7D6D51521DFCA28400B9FFBE /* VolunteersVC.swift in Sources */,
 				7DAC8C161DFC7D66005D170D /* Constants.swift in Sources */,
 				7DC2C57C1DFCB0E9007F5AFF /* DonaterData.swift in Sources */,
+				7DC2C5821DFD1442007F5AFF /* Report.swift in Sources */,
 				7D6D51501DFCA27000B9FFBE /* MapVC.swift in Sources */,
 				7D6D514A1DFC8F5300B9FFBE /* DetailsVC.swift in Sources */,
 				7DC2C57E1DFCC7DA007F5AFF /* VolunteerCell.swift in Sources */,

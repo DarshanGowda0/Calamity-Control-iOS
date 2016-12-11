@@ -19,6 +19,13 @@ PODS:
   - FirebaseInstanceID (1.0.8)
   - GoogleInterchangeUtilities (1.2.2):
     - GoogleSymbolUtilities (~> 1.1)
+  - GoogleMaps (2.1.1):
+    - GoogleMaps/Maps (= 2.1.1)
+  - GoogleMaps/Base (2.1.1)
+  - GoogleMaps/Maps (2.1.1):
+    - GoogleMaps/Base
+  - GooglePlaces (2.1.1):
+    - GoogleMaps/Base (= 2.1.1)
   - GoogleSymbolUtilities (1.1.2)
   - GoogleToolboxForMac/Defines (2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
@@ -27,6 +34,8 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - GoogleMaps
+  - GooglePlaces
 
 SPEC CHECKSUMS:
   Firebase: 387f37c7dca894a02708da9ff35ba147040eae9e
@@ -35,9 +44,11 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 6de92187481ff0e8e124064f21742e95ee883b02
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
+  GooglePlaces: 35636d86e5020cba3856eb988c09a5491de0a65a
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
 
-PODFILE CHECKSUM: d5368167df7605159f5a1276fd58354accda0c47
+PODFILE CHECKSUM: 028be0492efd34d21a62d298f6eb392295f3b44b
 
 COCOAPODS: 1.1.1

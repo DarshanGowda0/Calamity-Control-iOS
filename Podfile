@@ -6,6 +6,8 @@ target 'Calamity Control' do
   use_frameworks!
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
   # Pods for Calamity Control
 
 end
